@@ -12,7 +12,7 @@ def get_most_common_char(input_str):
     # Hint: Check the Python string docs for some useful built-in functions that may help:
     # https://docs.python.org/3.1/library/string.html
     ################################################################
-    # REPLACE THIS LINE WITH YOUR CODE
+    input_str = input_str.lower()
     ################################################################
 
     # define a dictionary mapping all letters a-z to their current counts, which start at 0
@@ -20,7 +20,7 @@ def get_most_common_char(input_str):
 
 
     # run through input string to get character counts
-    for char in input_str.lower():
+    for char in input_str:
         if char in char_counts:
             char_counts[char] = char_counts[char] + 1
 
